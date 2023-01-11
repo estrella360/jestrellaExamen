@@ -12,9 +12,13 @@ namespace jestrellaExamen.Vistas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen(string estudiante, string tot)
+        public Resumen(string estudiante, string tot, string user)
         {
             InitializeComponent();
+            lblEstudiante.Text = "" + estudiante;
+            lblTotal.Text = "" + tot;
+            
+            lblUser.Text = "" + user;
         }
     }
 }

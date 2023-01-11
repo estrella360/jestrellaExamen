@@ -19,7 +19,7 @@ namespace jestrellaExamen.Vistas
         {
             InitializeComponent();
             string usuario = lblUser.Text;
-            lblUser.Text = usuario + user;
+            lblUser.Text = "" + user;
 
         }
 
@@ -51,7 +51,8 @@ namespace jestrellaExamen.Vistas
             string estudiante = txtEstudiante.Text;
             string tot = txtTotal.Text;
 
-            Navigation.PushAsync(new Resumen(estudiante, tot));
+            Navigation.PushAsync(new Resumen(estudiante, tot, user));
+
         }
     }
 }

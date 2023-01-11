@@ -6,7 +6,8 @@
         <StackLayout>
              <Label Text="Examen P1 Estrella" TextColor="Red" FontSize="20" HorizontalTextAlignment="Center"/>
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
-            <Label x:Name="lblUser" Text="Usuario Conectado : " />
+            
+            <Label x:Name="lblUser" Text="Usuario Conectado : "/>
             <Label Text="Resumen del registro" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="35"></Label>
             <Grid>
                 <Grid.RowDefinitions>
@@ -21,9 +22,9 @@
                 
 
                 <Label Text="Nombre del Estudiante" Grid.Row="0" Grid.Column="0"/>
-                <Entry x:Name="txtEstudiante" IsReadOnly="True" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label x:Name="lblEstudiante" Text="" Grid.Row="0" Grid.Column="1"></Label>
                 <Label Text="Valor total a pagar" Grid.Row="1" Grid.Column="0" />
-                <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="1" Grid.Column="1" ></Entry>
+                <Label x:Name="lblTotal" Text="" Grid.Row="1" Grid.Column="1" ></Label>
 
             </Grid>
 
