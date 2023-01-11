@@ -35,7 +35,7 @@ namespace jestrellaExamen.Vistas
             double promabono = 4000 - abono;
             txtSaldoPendiente.Text = promabono.ToString();
 
-            double prommensualidad = (promabono/5) + (0.05*4000);
+            double prommensualidad = (promabono/5) * 0.05 + (promabono/5) ;
             txtMensualidades.Text = prommensualidad.ToString();
 
             double pagoTotal = (prommensualidad * 5) + abono;

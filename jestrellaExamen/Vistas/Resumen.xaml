@@ -4,7 +4,7 @@
              x:Class="jestrellaExamen.Vistas.Resumen">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Examen P1 Estrella" TextColor="Red" FontSize="20" HorizontalTextAlignment="Center"/>
+             <Label Text="Examen P1 Estrella" TextColor="Red" FontSize="20" HorizontalTextAlignment="Center"/>
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
             <Label x:Name="lblUser" Text="Usuario Conectado : " />
             <Label Text="Resumen del registro" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="35"></Label>
@@ -26,6 +26,7 @@
                 <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="1" Grid.Column="1" ></Entry>
 
             </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
