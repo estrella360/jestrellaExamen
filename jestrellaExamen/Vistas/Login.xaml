@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Vistas.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen P1 Estrella" TextColor="Red" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ingrese Usuario" FontSize="18" Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="txtUser" Placeholder="Ingrese Usuario" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Ingrese Contraseña" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtPass" Placeholder="Ingrese Contraseña" IsPassword="True" FontSize="18" Grid.Row="1" Grid.Column="1" />
+
+            </Grid>
+            <Button x:Name="btnLogin" Text="Inicio de Sesion" Clicked="btnLogin_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

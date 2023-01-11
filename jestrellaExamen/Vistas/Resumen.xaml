@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Vistas.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Examen P1 Estrella" TextColor="Red" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "/>
+            <Label x:Name="lblUser" Text="Usuario Conectado : " />
+            <Label Text="Resumen del registro" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="35"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                
+
+                <Label Text="Nombre del Estudiante" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtEstudiante" IsReadOnly="True" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Valor total a pagar" Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="1" Grid.Column="1" ></Entry>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
